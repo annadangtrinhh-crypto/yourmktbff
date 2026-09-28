@@ -541,6 +541,21 @@
         .hero-art .art-paper { transition: none; }
         .hero-art .art-paper:hover { translate: none; }
       }
+      .paper-scribble {
+        display: block;
+        font-size: 0;
+        height: 3rem;
+        right: 4%;
+        top: 7%;
+        transform: none;
+        width: 3rem;
+      }
+      .paper-scribble svg { display: block; height: 100%; width: 100%; }
+      @media (max-width: 767px) {
+        .hero-grid { gap: 32px; }
+        .hero-art { align-self: center; margin: 0; max-width: 360px; width: 100%; }
+        .hero-footer { margin-top: 24px; }
+      }
     </style>
   </head>
   <body>
@@ -581,7 +596,7 @@
             </button>
             <button class="art-paper paper-front" type="button" aria-label="Show yellow note: YOUR MKT BFF, good ideas travel." aria-pressed="true" tabindex="0">
               <div class="paper-label">YOUR<br />MKT<br />BFF</div>
-              <div class="paper-scribble">✳</div>
+              <div class="paper-scribble" aria-hidden="true"><svg viewBox="0 0 100 100" focusable="false"><path fill="#111" d="M50 3 61.2 37.7 97.7 37.7 68.2 59.1 79.5 93.8 50 72.4 20.5 93.8 31.8 59.1 2.3 37.7 38.8 37.7Z" /></svg></div>
               <div class="paper-note">good<br />ideas<br />travel</div>
               <div class="sticker sticker-circle">Let's<br /><strong>make<br />it work</strong></div>
               <div class="sticker sticker-star">✦</div>
